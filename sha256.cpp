@@ -8,9 +8,12 @@
  * along with this program. If not, see <https://github.com/wmthornton/PBZC.git>.
  */
 
-#include "CryptoLib256/CryptoLib256.h"
+/* File History:
+ * Created:  16-Dec-2024 WMT
+ * Modified: 16-Dec-2024 WMT
+*/
 
-using namespace std;
+#include "CryptoLib256/CryptoLib256.h"
 
 int main() {
 
@@ -62,21 +65,21 @@ int main() {
 
         int32_t generate_hash_value = SHA256_ENCRYPT::generate_hash_value(input, output, confusion, diffusion);
 
-        string generate_hash_value_output = to_string(generate_hash_value);
+        std::string generate_hash_value_output = std::to_string(generate_hash_value);
 
-        string input_string = "";
+        std::string input_string = "";
 
-        cout << "String to be encrypted: "; cin >> input_string;
+        std::cout << "String to be encrypted: "; std::cin >> input_string;
 
-        string initial_sha256 = sha256(input_string);
+        std::string initial_sha256 = sha256(input_string);
 
-        cout << "Hash value: " << generate_hash_value_output << endl;
+        std::cout << "Hash value: " << generate_hash_value_output << std::endl;
 
-        cout << "Input result: " << initial_sha256 << endl;
+        std::cout << "Input result: " << initial_sha256 << std::endl;
 
-        string sha256_encrypt_result = sha256(generate_hash_value_output + initial_sha256);
+        std::string sha256_encrypt_result = sha256(generate_hash_value_output + initial_sha256);
 
-        cout << "Fully Encrypted Result: " << sha256_encrypt_result << endl;
+        std::cout << "Fully Encrypted Result: " << sha256_encrypt_result << std::endl;
 
     return 0;
 }
