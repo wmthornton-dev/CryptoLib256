@@ -1,4 +1,4 @@
-![Public_Domain_Mark](https://github.com/user-attachments/assets/b848b351-7e66-4977-bbcf-b6204bb3a20a)
+![Public_Domain_Mark](https://github.com/user-attachments/assets/86359cee-3fab-4680-b3a7-0284b587224a)
 
 # CryptoLib256
 
