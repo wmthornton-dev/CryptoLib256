@@ -1,3 +1,5 @@
+![Public_Domain_Mark](https://github.com/user-attachments/assets/b848b351-7e66-4977-bbcf-b6204bb3a20a)
+
 # CryptoLib256
 
 CrytoLib256 is a C++ library for cryptography. It is a fully FIPS 180-2 SHA-224/256/384/512 compliant implementation. It is a portable C++ library that can be used in any environment that supports C++11 or higher. 
